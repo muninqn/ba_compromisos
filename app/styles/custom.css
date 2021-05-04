@@ -1,6 +1,4 @@
 /* Espacio para estilos personalizados */
-<<<<<<< Updated upstream
-=======
 .hero-imagen {
   display: flex;
   justify-content: space-between;
@@ -16,7 +14,7 @@
   -o-background-size: cover;
   background-size: cover;
   background-attachment: static;
-  padding: 6.6vw;
+  padding: 8vw;
   align-items: left;
   justify-content: left;
 }
@@ -56,4 +54,3 @@
     display: none;
   }
 }
->>>>>>> Stashed changes
