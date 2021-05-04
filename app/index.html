@@ -52,35 +52,23 @@
         alt="logo-municipalidad-de-neuquen"
       />
     </div>
-    <div class="hero-imagen" style="position: relative;">
+    <div class="hero-imagen" style="position: relative">
       <div class="hero-texto container">
         <h1 class="hero-header">Compromisos de Gobierno</h1>
         <h3>Municipalidad de Neuquén</h3>
       </div>
-      <div>
-      <img class="logo-compromiso" src="images/PC-01.svg" alt="" />
-      </div>
     </div>
     <div class="container">
-      <h1 id="loading" class="text-center">Cargando...</h1>
-      <div class="row row-selectores">
-        <div class="col-md-12">
-          <h1>¡Hola, Neuquén!</h1>
-          <p>
-            Esta es la página de prueba para visualizar los compromisos de
-            Neuquén
-          </p>
-        </div>
-        <div class="col-md-4">
-          <a class="btn btn-primary btn-block" href="#home">Home </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <h3>Ejemplo de iframe con <span class="selected"></span>:</h3>
-          <hr />
-          <div id="pym-container"></div>
-        </div>
+      <div id="iframe-container">
+        <iframe
+          id="home-iframe"
+          src="./app.html?initialWidth=1140&amp;childId=pym-container&amp;#home"
+          width="100%"
+          scrolling="no"
+          marginheight="0"
+          frameborder="0"
+          height="1000px"
+        ></iframe>
       </div>
     </div>
 

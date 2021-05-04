@@ -38,17 +38,33 @@
   display: flex;
 }
 .logo-muni {
-  height: 50px;
+  height: 35px;
   width: auto;
-}
-.logo-compromiso {
-  height: 150px;
-  width: auto;
-  position: absolute;
-  left: 70%;
-  z-index: 10;
 }
 
+.filtro-areas{
+  background-color: #5997D1!important;
+  color: white!important;
+}
+.filtro-areas:hover{
+  background-color: #6ea3d4!important;
+}
+.header{
+  background-color: #5997D1!important;
+}
+.compromiso-icon{
+  padding: 10px!important;
+}
+.compromiso-action-button{
+  background-color: #5997D1;
+  padding: 10px;
+}
+.compromiso-action-button:hover{
+  background-color: #3B66A9!important;
+}
+.progress-bar{
+  background-color: #1C3C75!important;
+}
 @media only screen and (max-width: 767px) {
   .logo-compromiso {
     display: none;

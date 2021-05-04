@@ -87,7 +87,7 @@ angular
   .service("LoadSVGService", function() {
     this.loadIcon = function(name, cb) {
       name = name.length == 1 ? "0" + name : name;
-      var icon = "images/iconos_v2/GCBA-compromisos-icons-" + name + ".svg";
+      var icon = "images/iconos_v2/NQN-compromisos-icons-" + name + ".svg";
       d3.xml(icon, "image/svg+xml", function(error, xml) {
         cb(document.importNode(xml.documentElement, true));
       });
@@ -97,11 +97,11 @@ angular
     this.getUrl = function(name, param) {
       if (param) {
         name = name.length == 1 ? "0" + name : name;
-        var icon = "images/iconos_v2/GCBA-compromisos-icons-cumplido.svg";
+        var icon = "images/iconos-nqn/NQN-compromisos-icons-cumplido.svg";
         return icon;
       } else {
         name = name.length == 1 ? "0" + name : name;
-        var icon = "images/iconos_v2/GCBA-compromisos-icons-" + name + ".svg";
+        var icon = "images/iconos-nqn/NQN-compromisos-icons-" + name + ".svg";
         return icon;
       }
     };
