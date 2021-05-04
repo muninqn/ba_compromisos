@@ -1,35 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap/dist/css/bootstrap.css"
+    />
     <link rel="stylesheet" href="bower_components/BAstrap/bastrap.css" />
     <link rel="stylesheet" href="bower_components/c3/c3.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/avances.css">
+=======
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/avances.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+>>>>>>> Stashed changes
     <!-- endbuild -->
     <style type="text/css">
-
-        textarea{resize: none;}
-        .row-preview{background-color: #dadada;display: none;}
-        .row-selectores{display: none;}
+      textarea {
+        resize: none;
+      }
+      .row-preview {
+        background-color: #dadada;
+        display: none;
+      }
+      .row-selectores {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
     <![endif]-->
 
     <!-- CONTENIDO -->
+<<<<<<< Updated upstream
     <div class="container">
         <h1 id="loading" class="text-center">Cargando...</h1>
         <div class="row row-selectores">
@@ -44,14 +64,46 @@
            <div class="col-md-4">
               <a class="btn btn-primary btn-block" href="#map">Mapa</a>
             </div>
+=======
+    <div class="top-bar"></div>
+    <div class="logos-top">
+      <img
+        class="logo-muni"
+        src="images/logo-muni-03.png"
+        alt="logo-municipalidad-de-neuquen"
+      />
+    </div>
+    <div class="hero-imagen" style="position: relative;">
+      <div class="hero-texto container">
+        <h1 class="hero-header">Compromisos de Gobierno</h1>
+        <h3>Municipalidad de Neuquén</h3>
+      </div>
+      <div>
+      <img class="logo-compromiso" src="images/PC-01.svg" alt="" />
+      </div>
+    </div>
+    <div class="container">
+      <h1 id="loading" class="text-center">Cargando...</h1>
+      <div class="row row-selectores">
+        <div class="col-md-12">
+          <h1>¡Hola, Neuquén!</h1>
+          <p>
+            Esta es la página de prueba para visualizar los compromisos de
+            Neuquén
+          </p>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h3>Ejemplo de iframe con <span class="selected"></span>:</h3>
-            <hr>
-            <div id="pym-container"></div>
-          </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary btn-block" href="#home">Home </a>
+>>>>>>> Stashed changes
         </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Ejemplo de iframe con <span class="selected"></span>:</h3>
+          <hr />
+          <div id="pym-container"></div>
+        </div>
+      </div>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -70,28 +122,26 @@
     <!-- endbower -->
     <!-- endbuild -->
     <script>
-        var pymParent;
-        var $container,$selected,$rows,$textarea;
-        $(document).ready(function(){
-            var embed = $('#template').val();
-            $container = $('#pym-container');
-            $selected = $('.selected');
-            $rows = $('.row-preview');
-            $selectores = $('.row-selectores');
-            $loading = $('#loading');
-            $loading.hide();
-            $selectores.show();
-            $('a.btn-primary').on('click',function(){
-                $rows.show();
-                $container.empty();
-                $selected.html($(this).html());
-                var server = location.origin + location.pathname;
-                var url = server +'app.html'+$(this).attr('href');
-                pymParent = new pym.Parent('pym-container', url, {});
-            });
+      var pymParent;
+      var $container, $selected, $rows, $textarea;
+      $(document).ready(function () {
+        var embed = $("#template").val();
+        $container = $("#pym-container");
+        $selected = $(".selected");
+        $rows = $(".row-preview");
+        $selectores = $(".row-selectores");
+        $loading = $("#loading");
+        $loading.hide();
+        $selectores.show();
+        $("a.btn-primary").on("click", function () {
+          $rows.show();
+          $container.empty();
+          $selected.html($(this).html());
+          var server = location.origin + location.pathname;
+          var url = server + "app.html" + $(this).attr("href");
+          pymParent = new pym.Parent("pym-container", url, {});
         });
+      });
     </script>
-
-
-</body>
+  </body>
 </html>
