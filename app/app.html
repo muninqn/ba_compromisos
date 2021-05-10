@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
   </head>
-  <body ng-app="compromisosSiteApp">
+  <body ng-app="compromisosSiteApp" style="background: transparent;">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -41,12 +41,12 @@
     </div>
     <div class="hero-imagen" style="position: relative">
       <div class="hero-texto container">
-        <h1 class="hero-header">Compromisos de Gobierno</h1>
-        <h3>Municipalidad de Neuquén</h3>
+        <img class="logo-compromiso" src="images/logo-cumplido.png" />
+        <h1 class="hero-header">Compromisos con la ciudad</h1>
       </div>
     </div>
     <!-- CONTENIDO -->
-      <div id="compromisos-main" ng-view=""></div>
+      <div id="compromisos-main" class="container" ng-view=""></div>
 
     <!-- FIN DE CONTENIDO -->
 

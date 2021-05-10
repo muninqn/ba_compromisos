@@ -504,7 +504,10 @@ angular
       $isotope = new Isotope(container, {
         itemSelector: ".item",
         masonry: { columnWidth: columnWidth },
-        layoutMode: "fitRows"
+        layoutMode: "fitRows",
+        fitRows: {
+          gutter: 20
+        }
       });
 
       $isotope.on("arrangeComplete", function(filteredItems) {});
